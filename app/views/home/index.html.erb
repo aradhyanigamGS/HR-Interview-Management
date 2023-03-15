@@ -1,0 +1,12 @@
+
+
+ <p class="navbar-text float-right">
+      <% if register_signed_in? %>
+        <h5> Welcome to HR-Interview-Management <strong><%= current_register.email %></strong>. </h5>
+        <%= button_to "Edit profile", edit_register_registration_path, class: "navbar-link" %> <br>
+        <%= button_to "Logout", destroy_register_session_path, method: :delete, class: "navbar-link"  %>
+      <% else %>
+        <%= button_to "Sign up", new_register_registration_path, class: "navbar-link"  %> 
+        <%= button_to "Login", new_register_session_path, class: "navbar-link"  %>
+      <% end %>
+  </p>

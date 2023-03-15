@@ -1,0 +1,1115 @@
+Started GET "/" for ::1 at 2023-03-14 17:47:39 +0530
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "postgres"
+):
+  
+activerecord (6.1.7.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.7.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.7.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.7.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.7.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.7.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.7.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.7.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.3) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (181.7ms)[0m  [1m[35mCREATE DATABASE "HR_development" ENCODING = 'unicode'[0m
+  [1m[35m (36.7ms)[0m  [1m[35mCREATE DATABASE "HR_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-03-14 17:49:03 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/gammastack/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/gammastack/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.1ms | Allocations: 419)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3513)
+
+
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1626116267260241085)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateRegisters (20230314124552)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "registers" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_registers_on_email" ON "registers" ("email")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_registers_on_reset_password_token" ON "registers" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230314124552"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-14 12:48:11.473903"], ["updated_at", "2023-03-14 12:48:11.473903"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1626116267260241085)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-03-14 18:22:23 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 296)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/gammastack/Desktop/git/HR-Interview-Management/public/packs
+[Webpacker] Hash: 804a8059a304061a3e74
+Version: webpack 4.46.0
+Time: 882ms
+Built at: 14/03/2023 6:22:24 pm
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-271cf8931bb708d2d8bb.js    121 KiB  application  [emitted] [immutable]  application
+js/application-271cf8931bb708d2d8bb.js.map    133 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-271cf8931bb708d2d8bb.js js/application-271cf8931bb708d2d8bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 1905.3ms | Allocations: 14584)
+Completed 200 OK in 1912ms (Views: 1907.4ms | ActiveRecord: 0.0ms | Allocations: 17794)
+
+
+Started GET "/" for ::1 at 2023-03-14 18:22:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3036)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3432)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1626116267260241085)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1626116267260241085)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-03-15 11:04:39 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4355)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<HomeController:0x000000000087a0>
+Did you mean?  authenticate_register!):
+  
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.7.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.7.3) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7.3) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7.3) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7.3) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7.3) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.3) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-03-15 11:07:08 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1404)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:07:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 648)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 13425)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 6.1ms | Allocations: 21123)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<ActionView::Base:0x0000000000a2d0>):
+    16: 
+    17: 
+    18:     <p class="navbar-text float-right">
+    19:       <% if user_signed_in? %>
+    20:         Logged in as <strong><%= current_user.email %></strong>.
+    21:         <%= link_to "Edit profile", edit_user_registration_path, class: "navbar-link" %> |
+    22:         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-link"  %>
+  
+app/views/layouts/application.html.erb:19
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:08:04 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 9955)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 11865)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<ActionView::Base:0x0000000000a708>
+Did you mean?  new_registration_path
+               new_register_registration_path):
+    21:         <%= link_to "Edit profile", edit_user_registration_path, class: "navbar-link" %> |
+    22:         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-link"  %>
+    23:       <% else %>
+    24:         <%= link_to "Sign up", new_user_registration_path, class: "navbar-link"  %> |
+    25:         <%= link_to "Login", new_user_session_path, class: "navbar-link"  %>
+    26:       <% end %>
+    27:     </p>
+  
+app/views/layouts/application.html.erb:24
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:08:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 9954)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 11848)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_session_path' for #<ActionView::Base:0x0000000000abe0>
+Did you mean?  new_session_path
+               new_register_session_path):
+    22:         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-link"  %>
+    23:       <% else %>
+    24:         <%= link_to "Sign up", new_register_registration_path, class: "navbar-link"  %> |
+    25:         <%= link_to "Login", new_user_session_path, class: "navbar-link"  %>
+    26:       <% end %>
+    27:     </p>
+    28: 
+  
+app/views/layouts/application.html.erb:25
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:09:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 5710)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 7671)
+
+
+  [1m[36mRegister Load (0.9ms)[0m  [1m[34mSELECT "registers".* FROM "registers" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/registers/sign_up" for ::1 at 2023-03-15 11:12:18 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5266)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 6632)
+
+
+Started POST "/registers" for ::1 at 2023-03-15 11:12:35 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 1115)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3572)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 6604)
+Completed 422 Unprocessable Entity in 188ms (Views: 6.3ms | ActiveRecord: 1.7ms | Allocations: 14069)
+
+
+Started POST "/registers" for ::1 at 2023-03-15 11:12:48 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 519)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2380)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5420)
+Completed 422 Unprocessable Entity in 185ms (Views: 8.1ms | ActiveRecord: 1.7ms | Allocations: 10559)
+
+
+Started POST "/registers" for ::1 at 2023-03-15 11:13:07 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 544)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5453)
+Completed 422 Unprocessable Entity in 183ms (Views: 5.2ms | ActiveRecord: 1.7ms | Allocations: 10678)
+
+
+Started POST "/registers" for ::1 at 2023-03-15 11:13:23 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 544)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5451)
+Completed 422 Unprocessable Entity in 186ms (Views: 5.3ms | ActiveRecord: 1.7ms | Allocations: 10652)
+
+
+Started POST "/registers" for ::1 at 2023-03-15 11:13:33 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mRegister Create (1.7ms)[0m  [1m[32mINSERT INTO "registers" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test1@gmail.com"], ["encrypted_password", "$2a$12$jVhBVMDOaZ2o8hRVTiLcn.cjO.b7ykoSREwFYvH5l.o1UfFrhltWC"], ["created_at", "2023-03-15 05:43:33.480702"], ["updated_at", "2023-03-15 05:43:33.480702"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 181ms (ActiveRecord: 4.0ms | Allocations: 6257)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:13:33 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 7352)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.1ms | Allocations: 10119)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<ActionView::Base:0x0000000000b860>
+Did you mean?  current_register):
+    17: 
+    18:     <p class="navbar-text float-right">
+    19:       <% if register_signed_in? %>
+    20:         Logged in as <strong><%= current_user.email %></strong>.
+    21:         <%= link_to "Edit profile", edit_user_registration_path, class: "navbar-link" %> |
+    22:         <%= link_to "Logout", destroy_register_session_path, method: :delete, class: "navbar-link"  %>
+    23:       <% else %>
+  
+app/views/layouts/application.html.erb:20
+Started GET "/" for ::1 at 2023-03-15 11:14:17 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.1ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3650)
+Completed 200 OK in 33ms (Views: 17.6ms | ActiveRecord: 2.1ms | Allocations: 6255)
+
+
+Started GET "/ideas" for ::1 at 2023-03-15 11:14:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/ideas"):
+  
+Started GET "/ideas" for ::1 at 2023-03-15 11:14:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/ideas"):
+  
+Started GET "/registers" for ::1 at 2023-03-15 11:15:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/registers"):
+  
+Started GET "/registers/sign_up" for ::1 at 2023-03-15 11:15:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mRegister Load (3.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms | Allocations: 1638)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:15:21 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (1.1ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3641)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 1.1ms | Allocations: 6244)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:15:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mRegister Load (1.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms | Allocations: 1612)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:15:22 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (1.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4616)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 1.8ms | Allocations: 6961)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:15:22 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.2ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 6760)
+Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 2.2ms | Allocations: 8467)
+
+
+Started GET "/registers/edit" for ::1 at 2023-03-15 11:15:24 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mRegister Load (0.7ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 212)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5791)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 8648)
+
+
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "registers" WHERE "registers"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mRegister Create (0.3ms)[0m  [1m[32mINSERT INTO "registers" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@gmail.com"], ["encrypted_password", "$2a$12$.XoUXNxid208NoCgy2AGse8IMGFl..U0nhhEbJnCOvobJuEZ8r94C"], ["created_at", "2023-03-15 05:47:27.462790"], ["updated_at", "2023-03-15 05:47:27.462790"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegister Load (0.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started PUT "/registers" for ::1 at 2023-03-15 11:17:58 +0530
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 593)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2905)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 5927)
+Completed 422 Unprocessable Entity in 353ms (Views: 5.5ms | ActiveRecord: 1.1ms | Allocations: 10723)
+
+
+Started PUT "/registers" for ::1 at 2023-03-15 11:18:18 +0530
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegister Update (1.2ms)[0m  [1m[33mUPDATE "registers" SET "encrypted_password" = $1, "updated_at" = $2 WHERE "registers"."id" = $3[0m  [["encrypted_password", "$2a$12$JokdgHqC221//ZRwjKukqeESK1KicLg9GBOK/N7IM3T.SB0NxuVp2"], ["updated_at", "2023-03-15 05:48:19.138993"], ["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 351ms (ActiveRecord: 4.1ms | Allocations: 7071)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:18:19 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3126)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 4842)
+
+
+  [1m[36mRegister Load (0.9ms)[0m  [1m[34mSELECT "registers".* FROM "registers"[0m
+Started GET "/" for ::1 at 2023-03-15 11:20:54 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.7ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3648)
+Completed 200 OK in 29ms (Views: 13.6ms | ActiveRecord: 2.7ms | Allocations: 6243)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:21:51 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (1.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 22ms (ActiveRecord: 1.8ms | Allocations: 4884)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:21:51 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:21:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5703)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7631)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:21:52 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 173)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1327)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 4421)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 5096)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:23:49 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5436)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 7361)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:23:57 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 182ms (ActiveRecord: 0.6ms | Allocations: 6216)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:23:57 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3444)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 5805)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:25:00 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (1.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3658)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 1.6ms | Allocations: 6249)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:25:03 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 4ms (ActiveRecord: 0.8ms | Allocations: 1914)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:25:03 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:25:03 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 5221)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6908)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:25:09 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 177ms (ActiveRecord: 0.6ms | Allocations: 3520)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:25:09 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3139)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 4854)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:26:02 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.4ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 400)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3717)
+Completed 200 OK in 32ms (Views: 19.6ms | ActiveRecord: 2.4ms | Allocations: 6312)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:26:03 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 3ms (ActiveRecord: 0.5ms | Allocations: 1914)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:26:03 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:26:04 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5233)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 6920)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:26:06 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 177ms (ActiveRecord: 0.6ms | Allocations: 3519)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:26:07 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3142)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 4857)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:27:49 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3717)
+Completed 200 OK in 29ms (Views: 15.9ms | ActiveRecord: 2.6ms | Allocations: 6312)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:27:51 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 4ms (ActiveRecord: 0.6ms | Allocations: 1916)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:27:51 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:27:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5228)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6916)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:27:53 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 176ms (ActiveRecord: 0.6ms | Allocations: 3522)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:27:53 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3142)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 4857)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:28:35 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.3ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3722)
+Completed 200 OK in 31ms (Views: 18.5ms | ActiveRecord: 2.3ms | Allocations: 6317)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:28:37 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 3ms (ActiveRecord: 0.5ms | Allocations: 1915)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:28:37 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:28:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5233)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 6920)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:28:38 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.7ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 175ms (ActiveRecord: 0.7ms | Allocations: 3519)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:28:39 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.4ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3138)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 4853)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.3ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3722)
+Completed 200 OK in 30ms (Views: 16.1ms | ActiveRecord: 2.3ms | Allocations: 6317)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:29:07 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 4ms (ActiveRecord: 0.6ms | Allocations: 1915)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:07 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:29:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5234)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 6923)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:29:10 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 178ms (ActiveRecord: 0.8ms | Allocations: 3522)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:10 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3142)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 4857)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:30 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (1.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3721)
+Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 1.6ms | Allocations: 6317)
+
+
+Started DELETE "/registers/sign_out" for ::1 at 2023-03-15 11:29:31 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 3ms (ActiveRecord: 0.5ms | Allocations: 1914)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:31 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/registers/sign_in" for ::1 at 2023-03-15 11:29:31 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 556)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5237)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 6924)
+
+
+Started POST "/registers/sign_in" for ::1 at 2023-03-15 11:29:34 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."email" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 175ms (ActiveRecord: 0.6ms | Allocations: 3519)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:34 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3138)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 4853)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:29:50 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (1.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3721)
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 1.6ms | Allocations: 6317)
+
+
+Started GET "/registers/edit" for ::1 at 2023-03-15 11:29:59 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 212)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5612)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.6ms | Allocations: 8470)
+
+
+Started PUT "/registers" for ::1 at 2023-03-15 11:43:40 +0530
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "register"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mRegister Load (0.8ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 199ms (ActiveRecord: 8.4ms | Allocations: 9927)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:43:41 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (0.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3137)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 4856)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:45:03 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4042)
+Completed 200 OK in 30ms (Views: 18.9ms | ActiveRecord: 2.5ms | Allocations: 6638)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:45:38 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 4048)
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 2.5ms | Allocations: 6638)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:45:48 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4048)
+Completed 200 OK in 37ms (Views: 25.6ms | ActiveRecord: 2.5ms | Allocations: 6645)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:45:56 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.6ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4056)
+Completed 200 OK in 32ms (Views: 19.4ms | ActiveRecord: 2.6ms | Allocations: 6653)
+
+
+Started GET "/" for ::1 at 2023-03-15 11:46:24 +0530
+Processing by HomeController#index as HTML
+  [1m[36mRegister Load (2.5ms)[0m  [1m[34mSELECT "registers".* FROM "registers" WHERE "registers"."id" = $1 ORDER BY "registers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 733)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4037)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 2.5ms | Allocations: 6628)
+
+
+Started GET "/" for ::1 at 2023-03-15 12:08:33 +0530
+  
+LoadError (cannot load such file -- /home/gammastack/Desktop/git/HR-Interview-Management/config/routes.rb):
+  
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:47:in `load'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:47:in `block in load_paths'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:47:in `each'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:47:in `load_paths'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:21:in `reload!'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:35:in `block in updater'
+activesupport (6.1.7.3) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (6.1.7.3) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (6.1.7.3) lib/rails/application/finisher.rb:208:in `block (2 levels) in <module:Finisher>'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:427:in `instance_exec'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:604:in `block (2 levels) in default_terminator'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:603:in `catch'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:603:in `block in default_terminator'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7.3) lib/active_support/callbacks.rb:105:in `run_callbacks'
+activesupport (6.1.7.3) lib/active_support/execution_wrapper.rb:114:in `run!'
+activesupport (6.1.7.3) lib/active_support/reloader.rb:114:in `run!'
+activesupport (6.1.7.3) lib/active_support/execution_wrapper.rb:77:in `block in run!'
+<internal:kernel>:90:in `tap'
+activesupport (6.1.7.3) lib/active_support/execution_wrapper.rb:74:in `run!'
+activesupport (6.1.7.3) lib/active_support/reloader.rb:63:in `run!'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.3) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.3) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2023-03-15 12:08:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
